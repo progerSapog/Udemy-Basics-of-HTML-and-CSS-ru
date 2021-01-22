@@ -1,0 +1,41 @@
+.list li:last-child a {
+    color: red;
+}
+
+.list li:first-child a {
+    color: orange;
+}
+
+.list li:nth-child(odd) a {
+    color: rgb(196, 206, 111);
+}
+
+.list li:nth-child(4) a {
+    color: rgb(255, 0, 255);
+}
+
+.list li a:hover {
+    color: rgb(233, 139, 139);
+}
+
+.list li:not(.not-example) a {
+    font-size: 30px;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: cyan;
+    margin-right: 10px;
+}
+
+.list li::after {
+    content: ' txeT';
+}
+
