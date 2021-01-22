@@ -1,0 +1,45 @@
+/*      ПРИОРИТЕТ CSS СТИЛЕЙ (от меньшегок  большему)
+    min: 1) *{}            - влияет на все элементы на старнице
+         2) тег {}         - влияет на все указанные теги
+         3) .class-name {} - влияет на элементы класса
+         4) #id-name {}    - изменяет элемент с аднным id
+    max: 5) inline style - которые указаны в html
+
+    Селекторы могут быть вложенными, например:
+        .class-name h1 {}
+
+    Так же можно задать слово через !important, но его стоит
+    использовать с осторожностью! Если используется данное указание,
+    то скорее всего где-то что-то не так.
+*/
+
+h1 {
+    color: orangered;
+}
+
+mark {
+    background-color: violet;
+    font-size: 20px;
+}
+
+p mark{
+    background-color: aqua;
+}
+
+.text{
+    text-transform: uppercase;
+    color: blue !important;
+    font-weight: bold;
+}
+
+.text-large{
+    width: 300px;
+}
+
+.text-small{
+    width: 90%;
+}
+
+#text{
+    background-color: whitesmoke;
+}
