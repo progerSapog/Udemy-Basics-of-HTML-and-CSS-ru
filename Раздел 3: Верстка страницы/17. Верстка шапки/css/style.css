@@ -1,0 +1,80 @@
+/* Start reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #212121;
+    font: 400 14px/1 'Roboto', sans-serif;
+}
+
+a {
+    /* цвет ссылки наследуется от цвета внешнего блока */
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+/* End reset */
+
+/* Default classes start */
+/* подключение flex'a */
+.d-flex {
+    display: flex;
+}
+
+/* Один слева другой справа */
+.justify-content-beetween {
+    justify-content: space-between;
+}
+
+/* размещение по середине */
+.align-items-center {
+    align-items: center;
+}
+/* Default classes end */
+
+/* header */
+.container{
+    max-width: 1170px;
+
+    /* центрация по середине другого блочного элемента */
+    margin: auto;
+    padding: 0 15px;
+}
+
+#header {
+    padding: 15px 0;
+    border-bottom: 2px solid #00e9ba;
+    background-color: white;
+
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* селектор соседнего элемента */
+.header-nav a + a{
+    margin-left: 30px;
+
+}
+
+.header-nav a {
+    text-transform: capitalize;
+}
+
+.header-nav a:hover
+{
+    color: #00e9ba;
+}
+/* header end */
