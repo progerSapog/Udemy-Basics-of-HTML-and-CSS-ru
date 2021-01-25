@@ -1,0 +1,66 @@
+/* По умолчанию главной осью считается горизонтальная
+    и элементы выстраиваются вдоль нее.
+    
+    При помощи св-ва flex-direction можно изменить направление
+    главной оси. 
+    
+    Св-во justify-content определеяет как распологаются элементы
+    в flex'е
+    
+    При изменении экрана элементы стягиваются и растягиваются
+    вместе с ним. При помощи св-ва flex-wrap можно включить перенос
+    элементов*/
+.flex-container {
+    padding: 20px;
+    background-color: lightgray;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+
+    align-content: space-between;
+}
+
+
+
+
+.flex-el {
+    width: 100px;
+    height: 100px;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+
+    /* св-во flex-grow определяет в пропорциях сколько
+    свободного места от контейнера будет занимать элемент. */
+    flex-grow: 1;
+}
+
+/* св-во order элементов flex'а меняет их порядок.
+    по умолчанию у всех эелементов order = 0 
+    Чем выше ордер тем ближе к концу находится элемент */
+.bg-blue {
+    background-color: blue;
+    order: 1;
+    flex-grow: 2;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.bg-green {
+    background-color: green;
+    align-self: center;
+}
+
+.bg-violet {
+    background-color: violet;
+    flex-grow: 2;
+}
+
+.bg-pink {
+    background-color: pink;
+}
