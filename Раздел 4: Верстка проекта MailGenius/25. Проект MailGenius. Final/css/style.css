@@ -1,0 +1,190 @@
+/* resets Start */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 14px/1 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/* resets End */
+
+/* Start default class */
+.d-flex {
+    display: flex;
+}
+
+.aligh-item-center {
+    align-items: center;
+}
+
+.btn {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.333;
+    padding: 16px 30px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+/* Default class end */
+
+/* start header */
+.container {
+    max-width: 1114px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.header {
+    padding: 40px 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.main-header-nav {
+    color: #fff;
+    font-weight: 700;
+    margin-left: 66px;
+}
+
+.main-header-nav a + a,
+.info-header-nav a + a  {
+    margin-left: 30px;
+}
+
+.info-header-nav {
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+}
+/* header end */
+
+/* Start main */
+/* inner */
+.inner {
+    height: 100vh;
+    background: linear-gradient(89.85deg, #23196F 0.13%, #180D5B 99.88%);
+    padding-top: 106px;
+    min-height: 910px;
+}
+
+.inner-call-to-action {
+    max-width: 545px;
+    position: relative;
+}
+
+.inner-call-to-action::after {
+    position: absolute;
+    content: '';
+    width: 738px;
+    height: 611px;
+    background: url('../img/background.png') no-repeat;
+    top: -95px;
+    right: -655px;
+    z-index: 0;
+}
+
+.call-to-action-title {
+    position: relative;
+    font-size: 48px;
+    line-height: 1.29;
+    font-weight: 700;
+    margin-top: 55px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.call-to-action-desq {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33333;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+    max-width: 390px;
+    margin-bottom: 55px;
+}
+
+.call-to-action-desq span {
+    color: #36a7b9;
+    font-weight: 700;
+}
+
+.btn-default {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 20px #0F064C;
+    color: #0F064C;
+}
+
+.test-your-email {
+    display: inline-block;
+}
+
+.email-not-required {
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.email-not-required span {
+    margin-left: 15px;
+}
+/*  end inner */
+
+/* Start inner services */
+.inner-servises-wrap {
+    margin-top: 95px;
+}
+
+.inner-services-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    max-width: 365px;
+}
+
+.inner-services-list-item {
+    width: 164px;
+    height: 164px;
+    background: rgba(15, 6, 76, 0.45);
+    cursor: pointer;
+}
+
+.inner-services-list-item + .inner-services-list-item {
+    margin-left: 10px;
+}
+
+.inner-services-list-item:hover {
+    background-color: #FFFFFF;
+}
+
+
+/* End inner services */
+
+
+/* End main */
