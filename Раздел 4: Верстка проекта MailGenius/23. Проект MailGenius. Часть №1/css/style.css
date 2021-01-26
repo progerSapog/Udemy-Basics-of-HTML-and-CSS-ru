@@ -1,0 +1,58 @@
+/* resets Start */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 14px/1 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* resets End */
+
+/* Start default class */
+.d-flex {
+    display: flex;
+}
+
+.aligh-item-center {
+    align-items: center;
+}
+/* Default class end */
+
+/* start header */
+.container {
+    max-width: 1114px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.header {
+    padding: 40px 0;
+    background-color: black;
+}
+
+.main-header-nav {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 66px;
+}
+
+.main-header-nav a + a,
+.info-header-nav a + a  {
+    margin-left: 30px;
+}
+
+.info-header-nav {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+}
+/* header end */
