@@ -1,0 +1,13 @@
+.grid-container {
+    background-color: lightblue;
+
+    display: grid;
+    grid-gap: 20px;
+
+    /* grid-template-columns: auto 0.8fr 1fr; */
+    grid-template-columns: repeat(4, 1fr 10px);
+}
+
+.item {
+    background-color: rgba(223, 141, 86, 0.897);
+}

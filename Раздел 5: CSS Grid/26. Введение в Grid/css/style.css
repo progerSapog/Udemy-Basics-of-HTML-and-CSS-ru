@@ -1,0 +1,15 @@
+
+.grid-container {
+    background-color: orangered;
+
+    /* grid */
+    display: grid;
+    /* задание колонок в grid */
+    /* grid-template-columns: 200px 50% auto auto; */
+    grid-template-columns: repeat(4, 20%) 200px;
+
+    /* Задание колонок в grid */
+    grid-template-rows: 100px 50px 200px auto;
+    /* отступы между элементами таблицы grid */
+    grid-gap: 20px;
+}

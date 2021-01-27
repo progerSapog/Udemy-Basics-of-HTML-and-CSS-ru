@@ -1,0 +1,16 @@
+.grid-container {
+    background-color: lightblue;
+
+    display: grid;
+    grid-gap: 10px;
+
+    /* В minmax() передаются минимальный и макс допустимые размеры */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.item {
+    background-color: lightsalmon;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
